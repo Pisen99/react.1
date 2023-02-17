@@ -8,6 +8,7 @@ class EventBinding extends React.Component{
             introduction: "Hello!",
             buttonText: "Exit",
         };
+        this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick() {
@@ -21,7 +22,7 @@ class EventBinding extends React.Component{
         return (
             <div>
                 <h1>{this.state.introduction} {this.props.greeting}</h1>
-                <button onClick={this.handleClick.bind(this)}>
+                <button onClick={this.handleClick}>
                     {this.state.buttonText}
                 </button>
             </div>
