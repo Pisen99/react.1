@@ -14,14 +14,14 @@ class EventBinding extends React.Component{
         this.setState({
             introduction: "Goodbye!"
         });
-        console.log(this.state.introduction);
+        console.log(this);
     }
 
     render() {
         return (
             <div>
                 <h1>{this.state.introduction} {this.props.greeting}</h1>
-                <button onClick={() => this.handleClick()}>
+                <button onClick={this.handleClick.bind(this)}>
                     {this.state.buttonText}
                 </button>
             </div>
