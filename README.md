@@ -155,3 +155,66 @@ The map method is itterating each item in the booklist and returning each book. 
 * Each one should have a title: "To kill a mockingbird", author: "harper lee, f. scott fitzgerald, j. d. salinger", pages: 281, 218, 234.
 * Create an hr inside the div, under the map method. Open up with {books.map(book => { return div, h5{book.title}, p{book.author}, p{book.pages}})}
 
+* Create a new file "book.js" with rfce
+* Create a variable "book" & give it the value of props.book
+* Pass props as it's parameter.
+* Copy and paste in the return with content in book.js return.
+
+* Import Book from ".book.js" in renderinglist.js
+* Add an hr in renderinglist.js, along with {}.
+* Create a books.map method for book
+* Return <Book book={book} />
+
+# When to use index as a key:
+1. Use index only if no unique IDs are avalable
+2. The list of elements you're rendering must be static.
+3. Your list must never be sorted or filtered.
+
+Obs!
+Rendering lists in React,
+Make sure every item has a unigue key prop,
+Don't use index in general, leads to issues when adding, removing or filtering items
+
+
+# Component LifeCycles
+Mounting - Adding a component to the DOM
+Updating - Change of props or state
+Unmounting - Removing a component from the DOM,
+
+What can cause a component to be unmounted:
+1. Page refresh
+2. Toggling a component
+3. re-render in the parent component
+
+When to use cleanup functions, (before unmounting):
+____________________
+
+Execute code automatically at a specifik point in the components lifecycle
+-  After it's placed in the DOM
+- After it is updated
+- Before it is removed from the DOM
+
+# Component LifeCycles Methods
+- componentDidMount(),
+Executes right after the component is placed in the DOM
+- componentDidUpdate(),
+Executes everytime components update (new props or state)
+- componentWillUnmount(),
+Executes right before the component is removed from the DOM
+
+
+
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
