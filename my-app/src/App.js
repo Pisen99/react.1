@@ -26,11 +26,14 @@ import UseStateWithObjects from './components/UseStateWithObjects';
 import ClassCounter from './components/ClassCounter';
 import UseEffectCounter from './components/UseEffectCounter';
 import UseEffectCounterContainer from './components/UseEffectCounterContainer';
+import HTTPRequests from './components/HTTPRequests';
+import HTTPPost from './components/HTTPPost';
+import HTTPHooks from './components/HTTPHooks';
 
 function App() {
   return (
     <div className="App">
-      <UseEffectCounterContainer />
+      <HTTPHooks />
     </div>
   );
 }
